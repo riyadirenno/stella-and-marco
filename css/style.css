@@ -1,7 +1,7 @@
 /* Fonts and Colours */
 @font-face {
   font-family: "MingLiU";
-  src: url("/fonts/mingliu.woff2");
+  src: url("/fonts/mingliu.ttf");
 }
 :root {
   /* Colours */
