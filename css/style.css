@@ -1,10 +1,10 @@
 /* Fonts and Colours */
 @font-face {
   font-family: "MingLiU";
-  src: url("/fonts/mingliu.eot?") format("eot"),
-    url("/fonts/mingliu.woff") format("woff"),
-    url("/fonts/mingliu.ttf") format("truetype"),
-    url("/fonts/mingliu.svg#MingLiU") format("svg");
+  src: url("mingliu.eot?") format("eot"),
+    url("mingliu.woff") format("woff"),
+    url("mingliu.ttf") format("truetype"),
+    url("mingliu.svg#MingLiU") format("svg");
   font-weight: normal;
   font-style: normal;
 }
