@@ -1,0 +1,360 @@
+/* Fonts and Colours */
+@font-face {
+  font-family: "MingLiU";
+  src: url("/fonts/mingliu.eot?") format("eot"),
+    url("/fonts/mingliu.woff") format("woff"),
+    url("/fonts/mingliu.ttf") format("truetype"),
+    url("/fonts/mingliu.svg#MingLiU") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+:root {
+  /* Colours */
+  --sm-beige: #f2f2e4;
+  --sm-black: #000000;
+  --sm-white: #ffffff;
+}
+/* Global Settings */
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behaviour: smooth;
+  font-family: "MingLiU";
+  scroll-snap-type: y mandatory;
+  line-height: 125%;
+}
+body {
+  background-color: var(--sm-beige);
+}
+.sm-block {
+  display: block;
+}
+.hidden {
+  display: none;
+}
+/* Font Size */
+.sm-font-20rem {
+  font-size: 2rem;
+}
+.sm-font-16rem {
+  font-size: 1.6rem;
+}
+.sm-font-12rem {
+  font-size: 1.2rem;
+}
+.sm-font-13rem {
+  font-size: 1.3rem;
+}
+/* Section Settings */
+.sm-pre-hero,
+.sm-hero,
+.sm-story-1,
+.sm-story-2,
+.sm-wedding,
+.sm-gallery,
+.sm-dresscode,
+.sm-rsvp,
+.sm-gifts,
+.sm-comments {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+}
+.sm-registry {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+}
+.sm-pre-hero,
+.sm-hero,
+.sm-wedding,
+.sm-gallery,
+.sm-dresscode,
+.sm-gifts,
+.sm-rsvp,
+.sm-comments {
+  background-color: var(--sm-beige);
+  color: var(--sm-black);
+}
+.sm-story-1,
+.sm-story-2 {
+  background-color: var(--sm-black);
+  color: var(--sm-white);
+}
+.sm-content-wrapper {
+  margin: 0 auto;
+  padding: 1em;
+  max-width: 90rem;
+}
+/* Audio Settings */
+.sm-music-player {
+  z-index: 1;
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  mix-blend-mode: difference;
+}
+.sm-audio-button {
+  background-color: transparent;
+  border: 0;
+  padding: 1.6em;
+  color: var(--sm-white);
+  cursor: pointer;
+}
+.sm-audio-button:hover {
+  text-decoration: underline;
+}
+/* CTA Section */
+.sm-black-primary-btn {
+  background-color: var(--sm-black);
+  font-size: 1.3rem;
+  color: var(--sm-white);
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 1.5rem 2.625rem;
+  transition: 0.25s ease;
+  border: 1px solid var(--sm-black);
+  cursor: pointer;
+}
+.sm-black-primary-btn:hover {
+  background-color: var(--sm-beige);
+  color: var(--sm-black);
+  border: 1px solid var(--sm-black);
+}
+.sm-gifts-toggle {
+  width: 7em;
+  background-color: var(--sm-black);
+  font-size: 1.3rem;
+  color: var(--sm-white);
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 1.5rem 2.625rem;
+  transition: 0.25s ease;
+  border: 1px solid var(--sm-black);
+  cursor: pointer;
+  margin: 0;
+}
+.sm-gifts-toggle:hover {
+  background-color: var(--sm-beige);
+  color: var(--sm-black);
+  border: 1px solid var(--sm-black);
+}
+.sm-copy-clipboard {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  padding: 1em;
+}
+.sm-copy-clipboard:hover {
+  text-decoration: underline;
+}
+.sm-textlink {
+  color: var(--sm-black);
+  text-decoration: none;
+}
+.sm-textlink:hover {
+  text-decoration: underline;
+}
+/* Navigation Settings */
+.sm-navigation {
+  position: sticky;
+  width: 100vw;
+  top: 0;
+  z-index: 2;
+  mix-blend-mode: difference;
+}
+.sm-navigation-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  padding: 0.8em;
+  color: var(--sm-white);
+}
+.sm-navigation-grid-1 {
+  grid-area: 1 / 6 / 2 / 7;
+  text-align: left;
+  font-size: 3rem;
+}
+.sm-navigation-grid-2 {
+  grid-area: 1 / 7 / 2 / 8;
+  text-align: right;
+  font-size: 3rem;
+}
+/* Pre-Hero Settings */
+body.no-scroll {
+  overflow: hidden;
+}
+.sm-pre-hero {
+  text-align: center;
+}
+.sm-pre-hero-content p {
+  padding: 1.1em;
+}
+.sm-pre-hero-content svg {
+  padding-top: 1.1em;
+}
+/* Hero Section */
+/* Story-1 Section */
+.sm-story-1-grid-parent {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  align-items: start;
+}
+.sm-story-1-grid-1 {
+  grid-area: 1 / 3 / 2 / 7;
+  text-align: left;
+  padding-bottom: 2em;
+}
+.sm-story-1-grid-2 {
+  grid-area: 1 / 7 / 2 / 11;
+  text-align: right;
+  padding-bottom: 2em;
+}
+.sm-story-1-grid-3 {
+  grid-area: 2 / 3 / 3 / 5;
+}
+.sm-story-1-grid-4 {
+  grid-area: 2 / 5 / 3 / 7;
+  text-align: center;
+}
+.sm-story-1-grid-5 {
+  grid-area: 2 / 7 / 3 / 9;
+  text-align: center;
+}
+.sm-story-1-grid-6 {
+  grid-area: 2 / 9 / 3 / 11;
+  text-align: right;
+}
+/* Story-2 Section */
+.sm-story-2-grid-parent {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.sm-story-2-grid {
+  grid-area: 1 / 2 / 2 / 12;
+}
+.sm-story-2-bottom {
+  text-align: center;
+  padding-top: 2em;
+}
+.sm-story-2-bottom img {
+  padding-bottom: 0.6em;
+}
+/* Wedding Section */
+.sm-wedding-grid-parent {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  align-items: start;
+}
+.sm-wedding-grid-1 {
+  grid-area: 1 / 5 / 2 / 9;
+  text-align: center;
+}
+.sm-wedding-grid-2 {
+  grid-area: 2 / 3 / 3 / 5;
+  text-align: left;
+}
+.sm-wedding-grid-3 {
+  grid-area: 2 / 5 / 3 / 9;
+  place-self: center;
+}
+.sm-wedding-grid-4 {
+  grid-area: 2 / 9 / 3 / 11;
+  text-align: right;
+}
+.sm-wedding-grid-5 {
+  grid-area: 3 / 5 / 4 / 9;
+  text-align: center;
+}
+.sm-wedding-directions {
+  font-size: 0.8rem;
+  text-decoration: none;
+  color: var(--ms-black);
+}
+.sm-wedding-directions:hover {
+  text-decoration: underline;
+}
+/* Dress Code */
+.sm-dresscode img {
+  height: 12em;
+  width: 12em;
+}
+.sm-dresscode-grid-parent {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  align-items: start;
+}
+.sm-dresscode-grid-1 {
+  padding-bottom: 6em;
+  grid-area: 1 / 2 / 2 / 12;
+  text-align: center;
+}
+.sm-dresscode-grid-2 {
+  grid-area: 2 / 2 / 3 / 5;
+}
+.sm-dresscode-grid-3 {
+  grid-area: 2 / 5 / 3 / 9;
+  text-align: center;
+}
+.sm-dresscode-grid-4 {
+  grid-area: 2 / 9 / 3 / 12;
+}
+.sm-dresscode-grid-5 {
+  padding-top: 6em;
+  grid-area: 3 / 2 / 4 / 12;
+  text-align: center;
+}
+/* Gifts Section */
+.sm-gifts-show {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sm-gifts-show img {
+  height: 12em;
+  width: 12em;
+}
+.sm-gifts-grid-parent {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.sm-gifts-grid-1 {
+  grid-area: 1 / 1 / 2 / 7;
+  text-align: center;
+  padding: 1em;
+}
+.sm-gifts-grid-2 {
+  grid-area: 1 / 7 / 2 / 13;
+  text-align: center;
+  padding: 1em;
+}
+/* Comments Section */
+.sm-comments-title {
+  text-align: center;
+}
+.sm-htmlcommentbox {
+  height: 50vh;
+  width: 55vw;
+  overflow-x: hidden;
+}
