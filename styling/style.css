@@ -717,13 +717,13 @@ body.no-scroll {
   /* Gallery Settings */
   .sm-gallery img {
     width: 100%;
-    height: 100%;
-    object-fit: contain;
+    height: 180px;
+    object-fit: cover;
     background-position: center;
   }
   .sm-gallery-wrapper {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 4 columns in the grid */
+    grid-template-columns: repeat(2, auto);
     grid-auto-rows: auto;
     height: auto;
   }
