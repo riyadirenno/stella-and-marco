@@ -674,7 +674,7 @@ body.no-scroll {
     text-align: center;
   }
   .sm-wedding-mobile-grid-1 img {
-    padding-top: 1em;
+    padding: 2em 0;
     max-height: 80%;
     max-width: 80%;
   }
@@ -687,7 +687,7 @@ body.no-scroll {
   .sm-wedding-mobile-grid-4 {
     grid-area: 3 / 2 / 4 / 6;
     text-align: center;
-    padding-top: 2em;
+    padding-top: 5em;
   }
 
   /* Dresscode Settings */
